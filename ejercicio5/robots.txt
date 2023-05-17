@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /LandingPage.html
+
+User-agent: Googlebot
+Disallow: /LandingPage.html
+Allow: /$
+
+Sitemap: https://www.example.com/sitemap.xml

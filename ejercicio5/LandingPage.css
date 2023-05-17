@@ -1,0 +1,235 @@
+/* Fondo y colores */
+body {
+    background-color: #f5f5f5;
+    position: relative;
+    min-height: 100vh;
+}
+
+.navbar {
+    background-color: #333;
+}
+
+.navbar-brand,
+.nav-link {
+    color: #fff;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #f1f1f1;
+}
+
+.btn-primary {
+    background-color: #4b0082;
+    border-color: #4b0082;
+}
+
+.btn-primary:hover {
+    background-color: #800080;
+    border-color: #800080;
+}
+
+/* Sección de características */
+.features {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.features h2 {
+    color: #4b0082;
+}
+
+.features p {
+    color: #333;
+}
+
+/* Sección de descarga */
+.download {
+    padding: 100px 0;
+    background-color: #4b0082;
+    color: #fff;
+}
+
+.download h2,
+.download p {
+    color: inherit;
+}
+
+/* Sección de reglas */
+.reglas {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+}
+
+.reglas h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4b0082;
+}
+
+.reglas p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.reglas ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.reglas li {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.reglas li:before {
+    content: "•";
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 3px;
+}
+
+.screenshots {
+    background-color: #4b0082;
+    padding: 50px 0;
+    color: #f1f1f1;
+}
+
+.screenshots img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.team img {
+    width: 50%;
+}
+
+/* Pie de página */
+.footer {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    bottom: 0;
+}
+
+/* Sección del juego */
+#juego {
+    padding: 80px 0;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#juego h1 {
+    color: #4b0082;
+}
+
+#juego #guide {
+    background-color: #4b0082;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+#juego #score {
+    margin-bottom: 20px;
+}
+
+#juego #score p {
+    color: #333;
+    margin: 0;
+}
+
+#juego .board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+#juego .square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    user-select: none;
+    width: 85px;
+    height: 85px;
+}
+
+#juego #guideImage {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#juego #guideImage img {
+    width: 200px;
+}
+
+#juego #reset,
+#juego #resetScore,
+#juego #saveScore {
+    background-color: #4b0082;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+#juego h2 {
+    color: #4b0082;
+    margin-bottom: 10px;
+}
+
+#juego p {
+    margin-bottom: 10px;
+}
+
+#juego #playerSelect {
+    margin-bottom: 10px;
+}
+
+#juego #leaderboard {
+    width: 100%;
+    margin-top: 2rem;
+    border-collapse: collapse;
+    width: 80%;
+    min-width: 300px;
+    max-width: 800px;
+}
+
+#juego #leaderboard th,
+#juego #leaderboard td {
+    padding: 5px 10px;
+    text-align: left;
+}
+
+#juego #leaderboard th {
+    background-color: #4b0082;
+    color: #fff;
+}
+
+.divisoria {
+
+    background-color: #4b0082;
+    border: none;
+    margin: 20px 0;
+}

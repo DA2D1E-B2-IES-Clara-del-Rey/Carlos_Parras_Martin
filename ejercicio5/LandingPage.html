@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tres en Raya - Página principal</title>
+
+    <!-- Enlazamos Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="LandingPage.css">
+</head>
+
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Tres en Raya</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Características</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#juego">Jugar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rules">Reglas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Equipo</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de características -->
+    <section id="features" class="features text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Fácil de aprender</h2>
+                    <p>Las reglas del Tres en Raya son sencillas y fáciles de aprender, ¡en unos minutos estarás jugando
+                        como un profesional!</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Múltiples modos de juego</h2>
+                    <p>Juega en modo individual contra la IA, en modo multijugador local o en línea contra jugadores de
+                        todo el mundo.</p>
+                    <p>*Temporalmente en desarrollo*</p>
+                </div>
+                <div class="col-md-4">
+                    <h2>Totalmente personalizable</h2>
+                    <p>Personaliza el tablero, las piezas y las reglas para adaptarlo a tus preferencias y hacerlo aún
+                        más divertido.</p>
+                    <p>*Temporalmente en desarrollo*</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de juego -->
+    <section id="download" class="download text-center">
+        <div class="container">
+            <h2>¡Juega al Tres en Raya!</h2>
+            <p>El juego clásico ahora en tu ordenador o dispositivo móvil.</p>
+            <a class="btn btn-primary btn-lg" href="#juego" role="button">Jugar ahora</a>
+        </div>
+    </section>
+
+    <!-- Sección de reglas -->
+    <section id="rules" class="reglas">
+        <div class="container">
+            <h1>Reglas del Tres en Raya</h1>
+            <p>Aquí se explican las reglas básicas del juego:</p>
+            <ul>
+                <li>El Tres en Raya se juega en un tablero de 3x3 casillas.</li>
+                <li>Hay dos jugadores, uno con fichas X y otro con fichas O.</li>
+                <li>El objetivo del juego es conseguir tres fichas en línea horizontal, vertical o diagonal.</li>
+                <li>Los jugadores colocan sus fichas por turnos en las casillas vacías del tablero.</li>
+                <li>El jugador que consiga tres fichas en línea gana la partida.</li>
+                <li>Si no hay más casillas vacías en el tablero y nadie ha conseguido tres fichas en línea, la partida
+                    queda en empate.</li>
+            </ul>
+        </div>
+        </div>
+    </section>
+
+    <!-- Sección de capturas de pantalla -->
+    <section class="screenshots text-center">
+        <div class="container">
+            <h2>Capturas de pantalla</h2>
+            <br>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="captura (1).jpeg" alt="Captura de pantalla 1">
+                </div>
+                <div class="col-md-4">
+                    <img src="captura (2).jpeg" alt="Captura de pantalla 2">
+                </div>
+                <div class="col-md-4">
+                    <img src="captura (3).jpeg" alt="Captura de pantalla 3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de equipo de desarrollo -->
+    <section id="footer" class="team text-center">
+        <div class="container">
+            <br>
+            <h2>Equipo de desarrollo</h2>
+            <p>El juego ha sido desarrollado por:</p>
+            <div class="row">
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                    <img src="yo.jpeg" alt="Miembro del equipo 2">
+                    <h4>Carlos Parras Martin</h4>
+                    <p>Estudiante de programación</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="divisoria">
+
+    <!-- Sección del juego -->
+    <section id="juego">
+        <h1>Tres en Raya</h1>
+        <button id="guide">Guía para teclado</button>
+        <p></p>
+        <div id="score">
+            <p>Jugador 1: <span id="scorePlayer1"></span></p>
+            <p>Jugador 2: <span id="scorePlayer2"></span></p>
+        </div>
+        <div class="board">
+            <div class="square" id="0"></div>
+            <div class="square" id="1"></div>
+            <div class="square" id="2"></div>
+            <div class="square" id="3"></div>
+            <div class="square" id="4"></div>
+            <div class="square" id="5"></div>
+            <div class="square" id="6"></div>
+            <div class="square" id="7"></div>
+            <div class="square" id="8"></div>
+        </div>
+        <div id="guideImage" style="display: none;">
+            <img src="guia.png" alt="Guía">
+        </div>
+
+        <button id="reset">Reiniciar Tablero</button>
+        <button id="resetScore">Reiniciar Puntuacion</button>
+
+        <div id="pregunta"></div>
+
+        <p></p>
+
+        <h2>LeaderBoard</h2>
+
+        <p>Elige de que jugador obtener la puntuación : </p>
+
+        <select id="playerSelect">
+            <option value="player1">Jugador 1</option>
+            <option value="player2">Jugador 2</option>
+        </select>
+
+        <button id="saveScore">Guardar puntaje</button>
+
+        <table id="leaderboard">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Puntaje</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p>&copy; 2023 Tres en Raya. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Enlazamos los archivos JavaScript necesarios -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"></script>
+    <script src="LandingPage.js"></script>
+
+</body>
+
+</html>
